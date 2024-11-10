@@ -23,7 +23,7 @@ const ProjectCardComponent: React.FC<ProjectCardComponentProps> = ({ title, tech
                     <p className="text-neutral-600 text-sm max-sm:text-[12px]">{techStack}</p>
                     <p className="text-neutral-600 text-sm max-sm:text-[12px] mt-2">{desc}</p>
                 </div>
-                <Link href={link} className="group relative inline-block focus:outline-none focus:ring w-fit">
+                <Link href={link} target="_blank" className="group relative inline-block focus:outline-none focus:ring w-fit">
                     <span className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#8cfc03] transition-transform group-hover:translate-x-0 group-hover:translate-y-0"></span>
                     <span className="relative inline-block border-2 border-current px-3 py-2 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75">
                         See More &raquo;

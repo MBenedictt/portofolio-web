@@ -25,28 +25,28 @@ const Navbar = () => {
             </div>
             <ul className="flex items-center gap-10">
                 <li className="font-semibold max-md:hidden">
-                    <Link href="/" className="relative group flex">
+                    <Link href="#home" className="relative group flex">
                         <span className="group-hover:after:w-full after:w-0 after:h-0.5 after:bg-black after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300">
                             Home
                         </span>
                     </Link>
                 </li>
                 <li className="font-semibold max-md:hidden">
-                    <Link href="/" className="relative group flex">
+                    <Link href="#about" className="relative group flex">
                         <span className="group-hover:after:w-full after:w-0 after:h-0.5 after:bg-black after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300">
                             About
                         </span>
                     </Link>
                 </li>
                 <li className="font-semibold max-md:hidden">
-                    <Link href="/" className="relative group flex">
+                    <Link href="#projects" className="relative group flex">
                         <span className="group-hover:after:w-full after:w-0 after:h-0.5 after:bg-black after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300">
                             Projects
                         </span>
                     </Link>
                 </li>
                 <li className="font-semibold max-md:hidden">
-                    <Link href="/" className="relative group flex">
+                    <Link href="#contact" className="relative group flex">
                         <span className="group-hover:after:w-full after:w-0 after:h-0.5 after:bg-black after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300">
                             Contact
                         </span>

@@ -28,13 +28,13 @@ export default function Home() {
       </Head>
       <Navbar></Navbar>
 
-      <div className='W-full h-full flex flex-col justify-center py-[120px]'>
+      <div id="home" className='W-full h-full flex flex-col justify-center py-[120px]'>
         <div className='flex justify-center items-center px-[200px] max-xl:px-20 max-md:px-5 max-md:flex-col-reverse'>
           <div className='w-7/12 max-md:w-full'>
             <h1 className='text-6xl font-bold leading-[80px] max-xl:text-5xl max-xl:leading-[60px] max-md:text-4xl max-md:leading-[50px] max-md:text-center max-md:mt-5'><span className='bg-[#8cfc03] px-3 w-fit'>Fullstack</span> Web Developer</h1>
             <p className='mt-5 leading-[28px] text-neutral-600 text-md max-xl:text-[14px] max-xl:leading-[24px] max-md:text-center'>Hi there! I'm Matthew Benedict, a 20 year old Fullstack Web Developer based in Surabaya, Indonesia.</p>
             <div className='mt-5 flex gap-5 max-md:flex-col max-md:items-center'>
-              <Link href={"/"} className='bg-black text-white hover:bg-slate-600 transition-colors duration-300 flex items-center gap-2 px-5 py-2 rounded'>
+              <Link href={"/assets/resume.pdf"} target="_blank" rel="noopener noreferrer" className='bg-black text-white hover:bg-slate-600 transition-colors duration-300 flex items-center gap-2 px-5 py-2 rounded'>
                 <p className='text-[14px]'>Resume</p>
                 <i className='text-lg'>
                   <FontAwesomeIcon icon={faFileArrowDown} />
@@ -101,7 +101,7 @@ export default function Home() {
       </div>
 
       {/* About Section */}
-      <div className='w-full h-full bg-neutral-100 px-[200px] py-20 flex justify-center items-center max-xl:px-20 max-md:px-5 max-md:flex-col'>
+      <div id='about' className='w-full h-full bg-neutral-100 px-[200px] py-20 flex justify-center items-center max-xl:px-20 max-md:px-5 max-md:flex-col'>
         <Image src="/assets/about.webp" alt="about" width={600} height={600} className='w-[350px] h-[350px] object-cover rounded-lg border-2 border-slate-300' />
         <div className='ml-20 w-2/4 max-xl:w-3/4 max-md:ml-0 max-md:flex max-md:flex-col max-md:items-center max-md:mt-10'>
           <h1 className='font-semibold text-2xl text-black w-fit max-md:text-xl bg-[#8cfc03] px-3 py-1'>About Me</h1>
@@ -114,13 +114,13 @@ export default function Home() {
       </div>
 
       {/* Projects Section */}
-      <div className='w-full h-full px-[200px] py-20 max-xl:px-20 max-md:px-5'>
+      <div id='projects' className='w-full h-full px-[200px] py-20 max-xl:px-20 max-md:px-5'>
         <h1 className='font-semibold text-2xl text-black w-fit max-md:text-xl bg-[#8cfc03] px-3 py-1 mb-10'>My Projects</h1>
         <div className='grid grid-cols-1 gap-10'>
           <ProjectCardComponent
             title="INDEX 2024 Event's Website"
             techStack="HTML, JS, PHP, Laravel, Tailwind"
-            link="/"
+            link="index.png"
             imgSrc="/assets/indexpetra.webp"
             alt="index"
             desc="I was trusted to be a vice coordinator of IT division for INDEX 2024, an international exhibition for interior design students, and I created the homepage and directed the front-end team to create the website's interface."
@@ -128,7 +128,7 @@ export default function Home() {
           <ProjectCardComponent
             title="EPICLAIR 2024 Event's Website"
             techStack="HTML, CSS, JS, PHP, Laravel"
-            link="/"
+            link="epiclair.png"
             imgSrc="/assets/epiclair.webp"
             alt="epiclair"
             desc="I was selected as a member of the IT division for EPICLAIR 2024, an international university competition and I built key sections of the website, including the homepage, landing page, and registration page."
@@ -136,7 +136,7 @@ export default function Home() {
           <ProjectCardComponent
             title="FusionWorks Art Gallery"
             techStack="React, Tailwind"
-            link="/"
+            link="https://fusion-works.vercel.app/"
             imgSrc="/assets/fusionworks.webp"
             alt="fusionworks"
             desc="My team, Koko's Fam, won 1st place in the BYTEFEST 2024 Web Design Competition hosted by Universitas Sebelas Maret Surakarta with our victorious creation, &quot;FusionWorks&quot; website led us to victory."
@@ -148,7 +148,7 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <div className='w-full h-full px-[200px] py-20 max-xl:px-20 max-md:px-10 bg-neutral-100 flex justify-between items-center'>
+      <div id="contact" className='w-full h-full px-[200px] py-20 max-xl:px-20 max-md:px-10 bg-neutral-100 flex justify-between items-center'>
         <div className='w-2/4 max-md:w-full'>
           <h1 className='font-semibold text-2xl text-black w-fit max-md:text-xl bg-[#8cfc03] px-3 py-1 mb-5'>Contact</h1>
           <h1 className='font-bold text-5xl text-black max-xl:text-4xl'>Get in touch</h1>
