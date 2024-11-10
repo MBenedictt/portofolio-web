@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { Poppins } from 'next/font/google'
+import { Poppins } from 'next/font/google';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 
@@ -14,12 +14,12 @@ const Navbar = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     const toggleDrawer = () => setIsDrawerOpen(!isDrawerOpen);
+    const closeDrawer = () => setIsDrawerOpen(false);
 
     return (
         <div className={`${poppins.className} w-full h-[70px] fixed top-0 left-0 flex justify-between items-center px-20 max-lg:px-10 max-md:px-5 bg-white z-50 shadow-md`}>
             <div className='flex items-center'>
                 <Link href="/" className="flex items-center">
-
                     <h1 className="font-bold text-2xl max-sm:text-lg">MBTheDev</h1>
                 </Link>
             </div>
@@ -71,28 +71,28 @@ const Navbar = () => {
                 <div className='flex items-center justify-center h-full'>
                     <ul className='flex flex-col items-center'>
                         <li className="font-medium text-2xl py-4">
-                            <Link href="/" className="relative group flex w-fit">
+                            <Link href="#home" onClick={closeDrawer} className="relative group flex w-fit">
                                 <span className="group-hover:after:w-full after:w-0 after:h-0.5 after:bg-black after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300">
                                     Home
                                 </span>
                             </Link>
                         </li>
                         <li className="font-medium text-2xl py-4">
-                            <Link href="/" className="relative group flex w-fit">
+                            <Link href="#about" onClick={closeDrawer} className="relative group flex w-fit">
                                 <span className="group-hover:after:w-full after:w-0 after:h-0.5 after:bg-black after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300">
                                     About
                                 </span>
                             </Link>
                         </li>
                         <li className="font-medium text-2xl py-4">
-                            <Link href="/" className="relative group flex w-fit">
+                            <Link href="#projects" onClick={closeDrawer} className="relative group flex w-fit">
                                 <span className="group-hover:after:w-full after:w-0 after:h-0.5 after:bg-black after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300">
                                     Projects
                                 </span>
                             </Link>
                         </li>
                         <li className="font-medium text-2xl py-4">
-                            <Link href="/" className="relative group flex w-fit">
+                            <Link href="#contact" onClick={closeDrawer} className="relative group flex w-fit">
                                 <span className="group-hover:after:w-full after:w-0 after:h-0.5 after:bg-black after:absolute after:bottom-0 after:left-0 after:transition-all after:duration-300">
                                     Contact
                                 </span>
