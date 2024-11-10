@@ -32,7 +32,7 @@ export default function Home() {
         <div className='flex justify-center items-center px-[200px] max-xl:px-20 max-md:px-5 max-md:flex-col-reverse'>
           <div className='w-7/12 max-md:w-full'>
             <h1 className='text-6xl font-bold leading-[80px] max-xl:text-5xl max-xl:leading-[60px] max-md:text-4xl max-md:leading-[50px] max-md:text-center max-md:mt-5'><span className='bg-[#8cfc03] px-3 w-fit'>Fullstack</span> Web Developer</h1>
-            <p className='mt-5 leading-[28px] text-neutral-600 text-md max-xl:text-[14px] max-xl:leading-[24px] max-md:text-center'>Hi there! I'm Matthew Benedict, a 20 year old Fullstack Web Developer based in Surabaya, Indonesia.</p>
+            <p className='mt-5 leading-[28px] text-neutral-600 text-md max-xl:text-[14px] max-xl:leading-[24px] max-md:text-center'>Hi there! I&apos;m Matthew Benedict, a 20 year old Fullstack Web Developer based in Surabaya, Indonesia.</p>
             <div className='mt-5 flex gap-5 max-md:flex-col max-md:items-center'>
               <Link href={"/assets/resume.pdf"} target="_blank" rel="noopener noreferrer" className='bg-black text-white hover:bg-slate-600 transition-colors duration-300 flex items-center gap-2 px-5 py-2 rounded'>
                 <p className='text-[14px]'>Resume</p>
@@ -123,10 +123,10 @@ export default function Home() {
             link="index.png"
             imgSrc="/assets/indexpetra.webp"
             alt="index"
-            desc="I was trusted to be a vice coordinator of IT division for INDEX 2024, an international exhibition for interior design students, and I created the homepage and directed the front-end team to create the website's interface."
+            desc="I was trusted to be a vice coordinator of IT division for INDEX 2024, an international exhibition for interior design students, and I created the homepage and directed the front-end team to create the website&apos;s interface."
           />
           <ProjectCardComponent
-            title="EPICLAIR 2024 Event's Website"
+            title="EPICLAIR 2024 Event&apos;s Website"
             techStack="HTML, CSS, JS, PHP, Laravel"
             link="epiclair.png"
             imgSrc="/assets/epiclair.webp"
@@ -139,7 +139,7 @@ export default function Home() {
             link="https://fusion-works.vercel.app/"
             imgSrc="/assets/fusionworks.webp"
             alt="fusionworks"
-            desc="My team, Koko's Fam, won 1st place in the BYTEFEST 2024 Web Design Competition hosted by Universitas Sebelas Maret Surakarta with our victorious creation, &quot;FusionWorks&quot; website led us to victory."
+            desc="My team, Koko&apos;s Fam, won 1st place in the BYTEFEST 2024 Web Design Competition hosted by Universitas Sebelas Maret Surakarta with our victorious creation, &quot;FusionWorks&quot; website led us to victory."
           />
           <div className='p-7 border-2 border-b-[6px] h-[250px] border-black rounded-xl bg-white flex justify-center items-center'>
             <h1 className='font-bold text-2xl'>Coming Soon... 🍵</h1>
@@ -152,7 +152,7 @@ export default function Home() {
         <div className='w-2/4 max-md:w-full'>
           <h1 className='font-semibold text-2xl text-black w-fit max-md:text-xl bg-[#8cfc03] px-3 py-1 mb-5'>Contact</h1>
           <h1 className='font-bold text-5xl text-black max-xl:text-4xl'>Get in touch</h1>
-          <p className='text-neutral-600 mt-5 max-xl:text-[14px]'>If you have any questions or inquiries, please don't hesitate to contact me.</p>
+          <p className='text-neutral-600 mt-5 max-xl:text-[14px]'>If you have any questions or inquiries, please don&apos;t hesitate to contact me.</p>
           <ul className='mt-10'>
             <li className='flex items-center py-1'><FontAwesomeIcon icon={faEnvelope} className='w-5 h-5 text-neutral-700 mr-3' /> <Link href="mailto:iammattbenedict@gmail.com" className='hover:underline max-xl:text-[14px]'>iammattbenedict@gmail.com</Link></li>
             <li className='flex items-center py-1'><FontAwesomeIcon icon={faInstagram} className='w-5 h-5 text-neutral-700 mr-3' /> <Link href={"https://instagram.com/mbenedictt/"} target='_blank' className='hover:underline max-xl:text-[14px]'>mbenedictt</Link></li>
